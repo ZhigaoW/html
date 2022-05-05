@@ -133,13 +133,206 @@
 ### 列表
 
 
+```html
+    <!-- 有序列表 -->
+    <ol>
+        <li>Java</li>
+        <li>Python</li>
+        <li>C/C++</li>
+    </ol>
+
+
+    <hr />
+
+    <!-- 无序列表 -->
+
+    <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>C/C++</li>
+    </ul>
+
+
+    <hr />
+
+    <!-- 自定义列表 
+    dl : 标签
+    dt : 列表名称
+    dd : 列表内容
+    -->
+    <dl>
+        <dt>学科</dt>
+
+        <dd>Java</dd>
+        <dd>Python</dd>
+        <dd>Linux</dd>
+        <dd>C </dd>
+
+        <dt>位置</dt>
+        <dd>西安</dd>
+        <dd>重庆</dd>
+        <dd>上海</dd>
+    </dl>
+```
+
+### 表格标签
+
+
+```html
+
+    <!-- 表格table
+    行 tr
+    列 td
+    -->
+    <table border="1px">
+        <tr>
+            <!-- 跨列 -->
+            <td colspan="4" align="center">1-1</td>
+        </tr>
+        <tr>
+            <!-- 跨列 -->
+            <td rowspan="2">2-1</td>
+            <td>2-2</td>
+            <td>2-3</td>
+            <td>2-4</td>
+        </tr>
+        <tr>
+            <td>3-2</td>
+            <td>3-3</td>
+            <td>3-4</td>
+        </tr>
+    </table>
+```
 
 
 
+### 音频和视频
+
+```html
+    <!-- 视频
+    控制标签: controls
+    自动播放: autoplay
+    -->
+    <video src="../resource/video/ocean.mp4" controls></video>
+
+    <!-- 音频
+    控制标签: controls
+    自动播放: autoplay
+    -->
+    <audio src="../resource/audio/birds.wav" controls></audio>
+```
+
+### 页面结构
+
+
+| 元素名  | 描述                           |
+| ------- | ------------------------------ |
+| header  | 标题头部区域的内容             |
+| footer  | 标记脚部区域的内容             |
+| section | Web页面中的一块独立区域        |
+| article | 独立的文章内容                 |
+| aside   | 相关内容或应用(常常用于侧边栏) |
+| nav     | 导航类辅助内容                 |
 
 
 
+```html
+<body>
+    <header>
+        <h2>网页头部</h2>
+    </header>
+    <section>
+        <h2>网页主体</h2>
+    </section>
+    <footer>
+        <h2>网页脚部</h2>
+    </footer>
+</body>
+```
 
+
+### 内联框架
+
+
+```html
+    <!-- <iframe src="http://player.bilibili.com/player.html?aid=55631961&bvid=BV1x4411V75C&cid=97257967&page=11"
+        scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+    </iframe> -->
+
+    <iframe src="https://www.bilibili.com" frameborder="0" width="1000px" height="800"></iframe>
+```
+
+
+### 表单
+
+
+```html
+    <form method="post" action="01.html">
+        <!-- 文本输入框 <input type="text"> -->
+        <p>Name: <input type="text" name="username"></p>
+        <!-- 密码输入框 <input type="password"> -->
+        <!-- 
+            value 默认初始值
+            maxlen 最长能写几个字符
+            size 文本框长度
+        -->
+        <p>Password: <input type="password" name="password"></p>
+
+        <p>
+            <input type="submit">
+            <input type="reset">
+        </p>
+    </form>
+```
+
+#### 下面都是input标签 type不一样
+
+##### 文本框
+
+##### 单选框 radio 多选框 checkbox
+
+name值相同为同一组
+
+##### 按钮 button/image 
+
+image : 图片按钮
+
+```html
+<!-- 
+    button : 普通按钮
+    image : 图片按钮
+    submit : 提交按钮
+    reset : 重置按钮
+-->
+```
+
+#### 下拉框和文件域 
+
+
+```html
+
+        <!-- 文件域 -->
+        <p><input type="file" name="files"></p>
+
+        <!-- 提交按钮 -->
+        <input type="submit">
+        <input type="reset">
+        </p>
+
+        <!-- 下拉框 -->
+        <p>
+            <select name="checked">
+                <option value="china">中国</option>
+                <option value="usa">美国</option>
+                <option value="ind">印度</option>
+                <!-- 默认值 -->
+                <option value="eth" selected>瑞士</option>
+            </select>
+        </p>
+
+        <!-- 文本域 -->
+        <textarea name="textarea" cols="30" rows="10"></textarea>
+```
 
 
 
