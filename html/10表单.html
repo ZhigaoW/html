@@ -50,6 +50,36 @@
 
         <p><input type="email" name="email"></p>
 
+        <!-- URL验证 -->
+        <p> <input type="url" name="url"></p>
+
+        <!-- 数字 -->
+        <input type="number" name="num" max="100" min="0" step="1">
+
+        <!-- 滑块 -->
+        <p>
+            音量
+            <input type="range" name="voice" max="100" min="0">
+        </p>
+
+        <p>
+            搜索
+            <input type="search" name="search">
+        </p>
+
+
+
+        <!-- 表单的初级验证 -->
+        <!-- 
+            placehoder : 提示信息
+            required : 非空判断
+            pattern : 正则表达式
+        -->
+
+        <p>
+            <input type="text" placeholder="请输入名字" required>
+        </p>
+
 
     </form>
 
